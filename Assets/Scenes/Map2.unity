@@ -746,6 +746,7 @@ GameObject:
   - component: {fileID: 172000427}
   - component: {fileID: 172000426}
   - component: {fileID: 172000429}
+  - component: {fileID: 172000430}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -783,7 +784,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -855,6 +856,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &172000430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172000424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &182399611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,6 +1107,7 @@ GameObject:
   - component: {fileID: 220249328}
   - component: {fileID: 220249327}
   - component: {fileID: 220249326}
+  - component: {fileID: 220249330}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Untagged
@@ -1116,7 +1130,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -1189,6 +1203,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &220249330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220249325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &242517667
 GameObject:
   m_ObjectHideFlags: 0
@@ -1309,7 +1335,7 @@ GameObject:
   - component: {fileID: 243258065}
   - component: {fileID: 243258064}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1724,6 +1750,7 @@ GameObject:
   - component: {fileID: 292624262}
   - component: {fileID: 292624261}
   - component: {fileID: 292624264}
+  - component: {fileID: 292624265}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1761,7 +1788,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -1833,6 +1860,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &292624265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292624259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &298417043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,8 +1900,8 @@ Transform:
   m_GameObject: {fileID: 298417043}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 18.2763, y: -3.68, z: -48.7382}
-  m_LocalScale: {x: 12.577407, y: 0.25, z: 3.8683155}
+  m_LocalPosition: {x: 18.2608, y: -3.68, z: -49.6267}
+  m_LocalScale: {x: 12.577407, y: 0.25, z: 5.6454196}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -2455,8 +2494,8 @@ Transform:
   m_GameObject: {fileID: 485671432}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 20.3297, y: -6.26, z: -48.1068}
-  m_LocalScale: {x: 1, y: 5, z: 5.0335}
+  m_LocalPosition: {x: 20.3126, y: -6.26, z: -49.084}
+  m_LocalScale: {x: 1, y: 5, z: 6.988008}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -2788,6 +2827,7 @@ GameObject:
   - component: {fileID: 503013598}
   - component: {fileID: 503013597}
   - component: {fileID: 503013596}
+  - component: {fileID: 503013600}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Untagged
@@ -2810,7 +2850,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2883,6 +2923,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &503013600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503013595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &531994902
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,6 +2947,7 @@ GameObject:
   - component: {fileID: 531994905}
   - component: {fileID: 531994904}
   - component: {fileID: 531994903}
+  - component: {fileID: 531994907}
   m_Layer: 0
   m_Name: Wall (28)
   m_TagString: Untagged
@@ -2917,7 +2970,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -2988,6 +3041,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: -59.497, y: 1, z: 0}
+--- !u!114 &531994907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531994902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &559603797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3123,6 +3188,7 @@ GameObject:
   - component: {fileID: 563787207}
   - component: {fileID: 563787206}
   - component: {fileID: 563787209}
+  - component: {fileID: 563787210}
   m_Layer: 0
   m_Name: Wall (34)
   m_TagString: Untagged
@@ -3160,7 +3226,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -3232,6 +3298,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &563787210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563787204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &566716906
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,6 +3563,7 @@ GameObject:
   - component: {fileID: 637000625}
   - component: {fileID: 637000624}
   - component: {fileID: 637000627}
+  - component: {fileID: 637000628}
   m_Layer: 0
   m_Name: Wall (37)
   m_TagString: Untagged
@@ -3594,6 +3673,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &637000628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 637000622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &641732658
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,6 +4152,7 @@ GameObject:
   - component: {fileID: 698604582}
   - component: {fileID: 698604581}
   - component: {fileID: 698604580}
+  - component: {fileID: 698604583}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -4098,7 +4190,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4156,6 +4248,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698604578}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &698604583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698604578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &700183611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,6 +4273,7 @@ GameObject:
   - component: {fileID: 700183614}
   - component: {fileID: 700183613}
   - component: {fileID: 700183616}
+  - component: {fileID: 700183617}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -4206,7 +4311,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -4278,6 +4383,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &700183617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700183611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &729977425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4290,6 +4407,7 @@ GameObject:
   - component: {fileID: 729977428}
   - component: {fileID: 729977427}
   - component: {fileID: 729977426}
+  - component: {fileID: 729977430}
   m_Layer: 0
   m_Name: Cylinder (14)
   m_TagString: Untagged
@@ -4312,7 +4430,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4385,6 +4503,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &729977430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 729977425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &752247917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,8 +4543,8 @@ Transform:
   m_GameObject: {fileID: 752247917}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 16.3497, y: -6.26, z: -48.0872}
-  m_LocalScale: {x: 1, y: 5, z: 5.0335}
+  m_LocalPosition: {x: 16.3335, y: -6.26, z: -49.0154}
+  m_LocalScale: {x: 1, y: 5, z: 6.890358}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -4714,6 +4844,7 @@ GameObject:
   - component: {fileID: 840390246}
   - component: {fileID: 840390245}
   - component: {fileID: 840390244}
+  - component: {fileID: 840390248}
   m_Layer: 0
   m_Name: Cylinder (15)
   m_TagString: Untagged
@@ -4736,7 +4867,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -4809,6 +4940,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &840390248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840390243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &857578789
 GameObject:
   m_ObjectHideFlags: 0
@@ -4943,6 +5086,7 @@ GameObject:
   - component: {fileID: 869255864}
   - component: {fileID: 869255863}
   - component: {fileID: 869255862}
+  - component: {fileID: 869255866}
   m_Layer: 0
   m_Name: Cylinder (4)
   m_TagString: Untagged
@@ -4965,7 +5109,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5038,6 +5182,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &869255866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869255861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &885636065
 GameObject:
   m_ObjectHideFlags: 0
@@ -5051,6 +5207,7 @@ GameObject:
   - component: {fileID: 885636068}
   - component: {fileID: 885636067}
   - component: {fileID: 885636070}
+  - component: {fileID: 885636071}
   m_Layer: 0
   m_Name: Wall (39)
   m_TagString: Untagged
@@ -5160,6 +5317,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &885636071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885636065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &955862503
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,6 +5341,7 @@ GameObject:
   - component: {fileID: 955862506}
   - component: {fileID: 955862505}
   - component: {fileID: 955862504}
+  - component: {fileID: 955862508}
   m_Layer: 0
   m_Name: Wall (30)
   m_TagString: Untagged
@@ -5194,7 +5364,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5265,6 +5435,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: -49.506, y: 1, z: 0}
+--- !u!114 &955862508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955862503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &958451689
 GameObject:
   m_ObjectHideFlags: 0
@@ -5278,6 +5460,7 @@ GameObject:
   - component: {fileID: 958451692}
   - component: {fileID: 958451691}
   - component: {fileID: 958451694}
+  - component: {fileID: 958451695}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -5315,7 +5498,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5387,6 +5570,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &958451695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958451689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &982794617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,6 +5839,7 @@ GameObject:
   - component: {fileID: 1042455321}
   - component: {fileID: 1042455320}
   - component: {fileID: 1042455323}
+  - component: {fileID: 1042455324}
   m_Layer: 0
   m_Name: Wall (35)
   m_TagString: Untagged
@@ -5681,7 +5877,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -5753,6 +5949,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1042455324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1042455318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1050791410
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,6 +5974,7 @@ GameObject:
   - component: {fileID: 1050791413}
   - component: {fileID: 1050791412}
   - component: {fileID: 1050791415}
+  - component: {fileID: 1050791416}
   m_Layer: 0
   m_Name: Wall (36)
   m_TagString: Untagged
@@ -5875,6 +6084,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1050791416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1050791410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1056713860
 GameObject:
   m_ObjectHideFlags: 0
@@ -5938,6 +6159,124 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1078304608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078304609}
+  - component: {fileID: 1078304613}
+  - component: {fileID: 1078304612}
+  - component: {fileID: 1078304611}
+  - component: {fileID: 1078304610}
+  m_Layer: 0
+  m_Name: Wall (48)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1078304609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078304608}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
+  m_LocalPosition: {x: 20.1747, y: -8.5, z: -49.1052}
+  m_LocalScale: {x: 8.683936, y: 0.19, z: 6.936607}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1906018345}
+  m_LocalEulerAnglesHint: {x: 0, y: 1, z: 0}
+--- !u!114 &1078304610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078304608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &1078304611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078304608}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1078304612
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078304608}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 6af1931c923f0184aa167e1e40f1a178, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1078304613
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078304608}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1099597025
 GameObject:
   m_ObjectHideFlags: 0
@@ -6425,6 +6764,7 @@ GameObject:
   - component: {fileID: 1137468447}
   - component: {fileID: 1137468446}
   - component: {fileID: 1137468449}
+  - component: {fileID: 1137468450}
   m_Layer: 0
   m_Name: Cylinder (9)
   m_TagString: Untagged
@@ -6462,7 +6802,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -6536,6 +6876,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1137468450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137468444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138308080
 GameObject:
   m_ObjectHideFlags: 0
@@ -6670,6 +7022,7 @@ GameObject:
   - component: {fileID: 1149944239}
   - component: {fileID: 1149944238}
   - component: {fileID: 1149944237}
+  - component: {fileID: 1149944241}
   m_Layer: 0
   m_Name: Wall (31)
   m_TagString: Untagged
@@ -6692,7 +7045,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -6763,6 +7116,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: -49.506, y: 1, z: 0}
+--- !u!114 &1149944241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149944236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1156767410
 GameObject:
   m_ObjectHideFlags: 0
@@ -7003,6 +7368,7 @@ GameObject:
   - component: {fileID: 1204627843}
   - component: {fileID: 1204627842}
   - component: {fileID: 1204627845}
+  - component: {fileID: 1204627846}
   m_Layer: 0
   m_Name: Wall (33)
   m_TagString: Untagged
@@ -7040,7 +7406,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -7112,6 +7478,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1204627846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204627840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1209988265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,6 +7747,7 @@ GameObject:
   - component: {fileID: 1297692343}
   - component: {fileID: 1297692342}
   - component: {fileID: 1297692345}
+  - component: {fileID: 1297692346}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
@@ -7406,7 +7785,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7480,6 +7859,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1297692346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297692340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321510449
 GameObject:
   m_ObjectHideFlags: 0
@@ -7807,6 +8198,7 @@ GameObject:
   - component: {fileID: 1408220836}
   - component: {fileID: 1408220835}
   - component: {fileID: 1408220834}
+  - component: {fileID: 1408220838}
   m_Layer: 0
   m_Name: Cylinder (13)
   m_TagString: Untagged
@@ -7829,7 +8221,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -7902,6 +8294,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408220838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408220833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1415619714
 GameObject:
   m_ObjectHideFlags: 0
@@ -7918,8 +8322,8 @@ GameObject:
   - component: {fileID: 1415619722}
   - component: {fileID: 1415619723}
   m_Layer: 0
-  m_Name: player
-  m_TagString: Untagged
+  m_Name: Player
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8203,6 +8607,7 @@ GameObject:
   - component: {fileID: 1425212617}
   - component: {fileID: 1425212616}
   - component: {fileID: 1425212619}
+  - component: {fileID: 1425212620}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Untagged
@@ -8240,7 +8645,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -8314,6 +8719,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1425212620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425212614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428057243
 GameObject:
   m_ObjectHideFlags: 0
@@ -9040,8 +9457,8 @@ Transform:
   m_GameObject: {fileID: 1504585287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 12.44, y: -6.26, z: -48.07}
-  m_LocalScale: {x: 1, y: 5, z: 5}
+  m_LocalPosition: {x: 12.4241, y: -6.26, z: -48.9773}
+  m_LocalScale: {x: 1, y: 5, z: 6.81514}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -9130,6 +9547,7 @@ GameObject:
   - component: {fileID: 1511567084}
   - component: {fileID: 1511567083}
   - component: {fileID: 1511567086}
+  - component: {fileID: 1511567087}
   m_Layer: 0
   m_Name: Cylinder (8)
   m_TagString: Untagged
@@ -9167,7 +9585,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9241,6 +9659,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1511567087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511567081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1531142116
 GameObject:
   m_ObjectHideFlags: 0
@@ -9253,6 +9683,7 @@ GameObject:
   - component: {fileID: 1531142119}
   - component: {fileID: 1531142118}
   - component: {fileID: 1531142117}
+  - component: {fileID: 1531142121}
   m_Layer: 0
   m_Name: Cylinder (11)
   m_TagString: Untagged
@@ -9275,7 +9706,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -9348,6 +9779,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531142121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531142116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1536883536
 GameObject:
   m_ObjectHideFlags: 0
@@ -9361,6 +9804,7 @@ GameObject:
   - component: {fileID: 1536883539}
   - component: {fileID: 1536883538}
   - component: {fileID: 1536883541}
+  - component: {fileID: 1536883542}
   m_Layer: 0
   m_Name: Wall (39)
   m_TagString: Untagged
@@ -9470,6 +9914,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1536883542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536883536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1540257528
 GameObject:
   m_ObjectHideFlags: 0
@@ -9483,6 +9939,7 @@ GameObject:
   - component: {fileID: 1540257531}
   - component: {fileID: 1540257530}
   - component: {fileID: 1540257533}
+  - component: {fileID: 1540257534}
   m_Layer: 0
   m_Name: Wall (38)
   m_TagString: Untagged
@@ -9592,6 +10049,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1540257534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1540257528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1540619211
 GameObject:
   m_ObjectHideFlags: 0
@@ -9938,6 +10407,7 @@ GameObject:
   - component: {fileID: 1548250607}
   - component: {fileID: 1548250606}
   - component: {fileID: 1548250609}
+  - component: {fileID: 1548250610}
   m_Layer: 0
   m_Name: Wall (37)
   m_TagString: Untagged
@@ -10047,6 +10517,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1548250610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1548250604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1582317742
 GameObject:
   m_ObjectHideFlags: 0
@@ -10165,6 +10647,7 @@ GameObject:
   - component: {fileID: 1641630183}
   - component: {fileID: 1641630182}
   - component: {fileID: 1641630181}
+  - component: {fileID: 1641630185}
   m_Layer: 0
   m_Name: Wall (29)
   m_TagString: Untagged
@@ -10187,7 +10670,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -10258,6 +10741,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: -49.506, y: 1, z: 0}
+--- !u!114 &1641630185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641630180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1680831881
 GameObject:
   m_ObjectHideFlags: 0
@@ -10619,6 +11114,7 @@ GameObject:
   - component: {fileID: 1740107809}
   - component: {fileID: 1740107808}
   - component: {fileID: 1740107807}
+  - component: {fileID: 1740107811}
   m_Layer: 0
   m_Name: Cylinder (6)
   m_TagString: Untagged
@@ -10641,7 +11137,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -10714,6 +11210,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1740107811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740107806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1751116355
 GameObject:
   m_ObjectHideFlags: 0
@@ -10952,8 +11460,8 @@ Transform:
   m_GameObject: {fileID: 1764016830}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 20.1917, y: -8.665, z: -48.1332}
-  m_LocalScale: {x: 8.683936, y: 0.19, z: 4.9921603}
+  m_LocalPosition: {x: 20.1748, y: -8.665, z: -49.102}
+  m_LocalScale: {x: 8.683936, y: 0.19, z: 6.930117}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -11359,6 +11867,7 @@ GameObject:
   - component: {fileID: 1824571034}
   - component: {fileID: 1824571033}
   - component: {fileID: 1824571032}
+  - component: {fileID: 1824571036}
   m_Layer: 0
   m_Name: Cylinder (10)
   m_TagString: Untagged
@@ -11381,7 +11890,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11454,6 +11963,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1824571036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824571031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1835893264
 GameObject:
   m_ObjectHideFlags: 0
@@ -11589,6 +12110,7 @@ GameObject:
   - component: {fileID: 1838503818}
   - component: {fileID: 1838503817}
   - component: {fileID: 1838503820}
+  - component: {fileID: 1838503821}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -11626,7 +12148,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11700,6 +12222,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1838503821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838503815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1870200785
 GameObject:
   m_ObjectHideFlags: 0
@@ -11712,6 +12246,7 @@ GameObject:
   - component: {fileID: 1870200788}
   - component: {fileID: 1870200787}
   - component: {fileID: 1870200786}
+  - component: {fileID: 1870200790}
   m_Layer: 0
   m_Name: Cylinder (7)
   m_TagString: Untagged
@@ -11734,7 +12269,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -11807,6 +12342,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1870200790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870200785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1898961464
 GameObject:
   m_ObjectHideFlags: 0
@@ -11992,6 +12539,7 @@ Transform:
   - {fileID: 182399612}
   - {fileID: 2089806292}
   - {fileID: 1764016831}
+  - {fileID: 1078304609}
   - {fileID: 1504585288}
   - {fileID: 298417044}
   - {fileID: 1966866498}
@@ -12020,6 +12568,7 @@ GameObject:
   - component: {fileID: 1915881323}
   - component: {fileID: 1915881322}
   - component: {fileID: 1915881321}
+  - component: {fileID: 1915881325}
   m_Layer: 0
   m_Name: Cylinder (5)
   m_TagString: Untagged
@@ -12042,7 +12591,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12115,6 +12664,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1915881325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915881320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1919275834
 GameObject:
   m_ObjectHideFlags: 0
@@ -12128,6 +12689,7 @@ GameObject:
   - component: {fileID: 1919275837}
   - component: {fileID: 1919275836}
   - component: {fileID: 1919275839}
+  - component: {fileID: 1919275840}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -12165,7 +12727,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12239,6 +12801,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1919275840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919275834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1944952895
 GameObject:
   m_ObjectHideFlags: 0
@@ -12251,6 +12825,7 @@ GameObject:
   - component: {fileID: 1944952898}
   - component: {fileID: 1944952897}
   - component: {fileID: 1944952896}
+  - component: {fileID: 1944952900}
   m_Layer: 0
   m_Name: Cylinder (2)
   m_TagString: Untagged
@@ -12273,7 +12848,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12346,6 +12921,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1944952900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944952895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1957057013
 GameObject:
   m_ObjectHideFlags: 0
@@ -12358,6 +12945,7 @@ GameObject:
   - component: {fileID: 1957057016}
   - component: {fileID: 1957057015}
   - component: {fileID: 1957057014}
+  - component: {fileID: 1957057018}
   m_Layer: 0
   m_Name: Cylinder (1)
   m_TagString: Untagged
@@ -12380,7 +12968,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -12453,6 +13041,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1957057018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957057013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1966866497
 GameObject:
   m_ObjectHideFlags: 0
@@ -12481,8 +13081,8 @@ Transform:
   m_GameObject: {fileID: 1966866497}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.008726558, z: 0, w: 0.999962}
-  m_LocalPosition: {x: 24.06, y: -6.26, z: -48.296}
-  m_LocalScale: {x: 1, y: 5, z: 5}
+  m_LocalPosition: {x: 24.0439, y: -6.26, z: -49.2209}
+  m_LocalScale: {x: 1, y: 5, z: 6.85}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1906018345}
@@ -12677,6 +13277,7 @@ GameObject:
   - component: {fileID: 1999876825}
   - component: {fileID: 1999876824}
   - component: {fileID: 1999876827}
+  - component: {fileID: 1999876828}
   m_Layer: 0
   m_Name: Wall (32)
   m_TagString: Untagged
@@ -12714,7 +13315,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12786,6 +13387,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1999876828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999876822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2083300343
 GameObject:
   m_ObjectHideFlags: 0
@@ -12799,6 +13412,7 @@ GameObject:
   - component: {fileID: 2083300346}
   - component: {fileID: 2083300345}
   - component: {fileID: 2083300348}
+  - component: {fileID: 2083300349}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -12836,7 +13450,7 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -12908,6 +13522,18 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &2083300349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083300343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2089806291
 GameObject:
   m_ObjectHideFlags: 0
@@ -13269,6 +13895,7 @@ GameObject:
   - component: {fileID: 2143575774}
   - component: {fileID: 2143575773}
   - component: {fileID: 2143575772}
+  - component: {fileID: 2143575776}
   m_Layer: 0
   m_Name: Cylinder (3)
   m_TagString: Untagged
@@ -13291,7 +13918,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -13364,6 +13991,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 374149455}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2143575776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143575771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272972908cb20304db5069e7b46717e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
