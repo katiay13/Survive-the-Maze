@@ -7,7 +7,7 @@ public class TouchObstacle : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            other.GetComponent<DeathHandler>().TriggerDeath();
         }
     }
 }
