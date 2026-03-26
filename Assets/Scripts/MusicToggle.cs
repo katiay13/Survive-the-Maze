@@ -5,6 +5,8 @@ public class MusicToggle : MonoBehaviour
 {
     public Image background;
     public RectTransform thumb;
+    public AudioSource musicSource;
+
     private bool isOn = true;
 
     private Color onColor = new Color(0f, 0.94f, 1f, 1f);
@@ -26,5 +28,7 @@ public class MusicToggle : MonoBehaviour
     {
         background.color = isOn ? onColor : offColor;
         thumb.anchoredPosition = isOn ? new Vector2(-19, 0) : new Vector2(-49, 0);
+        if (musicSource != null)
+            musicSource.mute = !isOn;
     }
 }

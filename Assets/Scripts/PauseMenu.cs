@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    [Header("UI Elements")]
     public GameObject pausePanel;
     public GameObject pauseButton;
     public DeathHandler playerDeathHandler;
@@ -46,11 +45,11 @@ public class PauseMenu : MonoBehaviour
     public void QuitToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(mainMenuSceneName);
+        SceneManager.LoadScene(mainMenuSceneName); // Not implemented yet
     }
 
     public void ChangeLevel()
     {
-        Debug.Log("Change level pressed — not implemented yet");
+        // Add functionality later
     }
 }

@@ -12,6 +12,9 @@ public class DeathHandler : MonoBehaviour
     public Transform enemy;
     public Transform enemySpawnPoint;
 
+    [Header("Pause")]
+    public GameObject pauseButton;
+
     private Rigidbody rb;
     public bool isDead = false;
 
@@ -35,16 +38,16 @@ public class DeathHandler : MonoBehaviour
         rb.isKinematic = true;
 
         deathPanel.SetActive(true);
+        pauseButton.SetActive(false);
 
         yield return new WaitForSeconds(displayDuration);
 
         deathPanel.SetActive(false);
+        pauseButton.SetActive(true);
 
-        // Reset player
         transform.position = respawnPoint.position;
         rb.isKinematic = false;
 
-        // Reset enemy
         enemy.position = enemySpawnPoint.position;
 
         isDead = false;
