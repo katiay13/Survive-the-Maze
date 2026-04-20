@@ -33,6 +33,14 @@ public class ScoreManager : MonoBehaviour
     public void ResetCoins()
     {
         coinCount = 0;
+
+        // find every coin in the scene and reactivate it
+        Coin[] allCoins = FindObjectsOfType<Coin>(true); // true = include inactive
+        foreach (Coin coin in allCoins)
+        {
+            coin.gameObject.SetActive(true);
+        }
+
         UpdateUI();
     }
 
