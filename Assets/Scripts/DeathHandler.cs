@@ -28,6 +28,7 @@ public class DeathHandler : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
+        ScoreManager.instance.ResetCoins();
         StartCoroutine(DeathSequence());
     }
 
