@@ -7,13 +7,15 @@ public class Coin : MonoBehaviour
     {
         transform.Rotate(0f, 0f, 90f * Time.deltaTime);
     }
-
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             ScoreManager.instance.AddCoin();
-            gameObject.SetActive(false); // hides it instead of destroying it
+            GetComponentInChildren<ParticleSystem>().Play();
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+            Destroy(gameObject, 1.5f);
         }
     }
 

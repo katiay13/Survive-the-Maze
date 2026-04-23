@@ -1,13 +1,16 @@
 using UnityEngine;
-using System.Collections;
 
-public class BeneficialToken : MonoBehaviour
+public class BTokenParticles : MonoBehaviour
 {
+    void Update()
+    {
+        transform.Rotate(0f, 0f, 90f * Time.deltaTime);
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            ScoreManager.instance.StartCoinDoubler();
             GetComponentInChildren<ParticleSystem>().Play();
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
