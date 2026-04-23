@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
+using System.Collections;
 public class Coin : MonoBehaviour
 {
     void Update()
@@ -15,8 +14,13 @@ public class Coin : MonoBehaviour
             GetComponentInChildren<ParticleSystem>().Play();
             GetComponent<MeshRenderer>().enabled = false;
             GetComponent<Collider>().enabled = false;
-            Destroy(gameObject, 1.5f);
+            StartCoroutine(Deactivate());
         }
     }
 
+    IEnumerator Deactivate()
+    {
+        yield return new WaitForSeconds(1.5f);
+        gameObject.SetActive(false);
+    }
 }
