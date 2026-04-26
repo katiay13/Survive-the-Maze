@@ -1,22 +1,20 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
     [Header("Panels")]
     public GameObject titlePanel;
     public GameObject pausePanel;
-
     private bool isPaused = false;
 
     void Start()
     {
-        // Always start on title screen
         ShowTitleScreen();
     }
 
     void Update()
     {
-        // Only allow pause if title screen is hidden
         if (!titlePanel.activeSelf)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
@@ -61,12 +59,10 @@ public class UIManager : MonoBehaviour
         isPaused = false;
     }
 
-    // ---- Quit to Title ----
-    public void QuitToTitle()
+    public void RestartGame()
     {
-        pausePanel.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
-        ShowTitleScreen();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
