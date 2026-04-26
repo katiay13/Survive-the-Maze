@@ -24,6 +24,7 @@ public class DeathHandler : MonoBehaviour
     }
     public void TriggerDeath()
     {
+        // Stop any active powerups and reset score before showing death screen
         if (isDead) return;
         isDead = true;
         ScoreManager.instance.StopCoinDoubler();
@@ -33,12 +34,15 @@ public class DeathHandler : MonoBehaviour
     }
     IEnumerator DeathSequence()
     {
+        // Freeze player and show death panel
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         rb.isKinematic = true;
         deathPanel.SetActive(true);
         pauseButton.SetActive(false);
         yield return new WaitForSeconds(displayDuration);
+
+        // Respawn player and enemy, then re-enable all coins and tokens
         deathPanel.SetActive(false);
         pauseButton.SetActive(true);
         transform.position = respawnPoint.position;

@@ -50,6 +50,6 @@ public class PauseMenu : MonoBehaviour
 
     public void ChangeLevel()
     {
-        // Add functionality later
+        // Add functionality later if there is time
     }
 }

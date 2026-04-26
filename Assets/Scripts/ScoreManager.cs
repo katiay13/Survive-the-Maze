@@ -19,13 +19,13 @@ public class ScoreManager : MonoBehaviour
 
     void Start()
     {
-        highScore = PlayerPrefs.GetInt("HighScore", 0);
+        highScore = PlayerPrefs.GetInt("HighScore", 0); // Loads the saved high score
         UpdateUI();
     }
 
     public void AddCoin()
     {
-        coinCount += coinDoublerActive ? 2 : 1;
+        coinCount += coinDoublerActive ? 2 : 1; // Doubles coin collection when token is activated
         UpdateUI();
     }
 
@@ -40,6 +40,7 @@ public class ScoreManager : MonoBehaviour
         coinDoublerActive = false;
     }
 
+    // Activates coin doubler for 10 seconds, notifying the player at start and end
     private IEnumerator CoinDoublerCoroutine()
     {
         coinDoublerActive = true;

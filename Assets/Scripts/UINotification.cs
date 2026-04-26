@@ -19,7 +19,7 @@ public class UINotification : MonoBehaviour
     void Start()
     {
         animator = notificationPanel.GetComponent<Animator>();
-        notificationPanel.SetActive(false);
+        notificationPanel.SetActive(false); // Hide panel on startups
     }
 
     public void ShowNotification(string message, Color color)
@@ -28,6 +28,7 @@ public class UINotification : MonoBehaviour
         StartCoroutine(NotificationCoroutine(message, color));
     }
 
+    // Shows the notification, waits 2 seconds, then hides it
     private IEnumerator NotificationCoroutine(string message, Color color)
     {
         notificationText.text = message;

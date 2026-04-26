@@ -17,6 +17,7 @@ public class ToggleSlider : MonoBehaviour
         OnToggleChanged(toggle.isOn);
     }
 
+    // Moves the thumb and changes background color based on toggle state
     void OnToggleChanged(bool isOn)
     {
         thumb.anchoredPosition = isOn ? new Vector2(38, 0) : new Vector2(5, 0);

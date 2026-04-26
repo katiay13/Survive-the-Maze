@@ -24,6 +24,7 @@ public class MusicToggle : MonoBehaviour
         UpdateVisual();
     }
 
+    // Updates thumb position, background color, and mutes/unmutes music based on toggle state
     void UpdateVisual()
     {
         background.color = isOn ? onColor : offColor;

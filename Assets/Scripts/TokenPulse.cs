@@ -16,6 +16,7 @@ public class TokenPulse : MonoBehaviour
 
     void Update()
     {
+        // Makes the token spin.
         float intensity = Mathf.Lerp(minIntensity, maxIntensity,
             (Mathf.Sin(Time.time * pulseSpeed) + 1f) / 2f);
         mat.SetColor("_EmissionColor", emissionColor * intensity);
