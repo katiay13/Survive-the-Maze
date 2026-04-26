@@ -4843,7 +4843,7 @@ GameObject:
   - component: {fileID: 2327985072625680935}
   - component: {fileID: 1578377723011157484}
   - component: {fileID: 8661350413647621204}
-  - component: {fileID: 2193716734529770345}
+  - component: {fileID: -2877529657915133584}
   m_Layer: 0
   m_Name: HarmfulToken
   m_TagString: Token
@@ -4954,7 +4954,7 @@ MonoBehaviour:
   pulseSpeed: 2
   minIntensity: 0.5
   maxIntensity: 2
---- !u!114 &2193716734529770345
+--- !u!114 &-2877529657915133584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4966,4 +4966,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a68242da631f9f409f557cd5ceb6451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tokenSound: {fileID: 8300000, guid: fa6bfade87f637046bdcda31cdb38045, type: 3}
+  enemy: {fileID: 0}
+  spawnRadius: 5

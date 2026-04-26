@@ -1,37 +1,29 @@
 using UnityEngine;
-using System.Collections;
+using UnityEngine.AI;
 
 public class HarmfulToken : MonoBehaviour
 {
-    public AudioClip tokenSound;
-    private AudioSource audioSource;
+    public float spawnRadius = 5f;
 
-    void Start()
-    {
-        audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.playOnAwake = false;
-    }
-
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // Boost enemy speed and hide the token on pickup
-            EnemyMovement.instance.StartSpeedBoost();
-            GetComponentInChildren<ParticleSystem>().Play();
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Collider>().enabled = false;
-
-            if (tokenSound != null)
-                audioSource.PlayOneShot(tokenSound);
-
-            StartCoroutine(Deactivate());
+            TeleportEnemyNearPlayer(other.transform);
+            Destroy(gameObject);
         }
     }
 
-    IEnumerator Deactivate()
+    private void TeleportEnemyNearPlayer(Transform player)
     {
-        yield return new WaitForSeconds(1.5f);
-        gameObject.SetActive(false);
+        Vector3 randomOffset = Random.insideUnitSphere * spawnRadius;
+        randomOffset.y = 0f;
+        Vector3 targetPos = player.position + randomOffset;
+
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(targetPos, out hit, spawnRadius, NavMesh.AllAreas))
+        {
+            EnemyMovement.instance.GetComponent<NavMeshAgent>().Warp(hit.position);
+        }
     }
 }
