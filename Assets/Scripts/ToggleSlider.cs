@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Animates a custom toggle slider UI element - moves thumb and changes color based on state
 public class ToggleSlider : MonoBehaviour
 {
     public RectTransform thumb;
@@ -12,9 +13,10 @@ public class ToggleSlider : MonoBehaviour
 
     void Start()
     {
+        // Subscribe to Unity's Toggle component value change event
         toggle = GetComponent<Toggle>();
         toggle.onValueChanged.AddListener(OnToggleChanged);
-        OnToggleChanged(toggle.isOn);
+        OnToggleChanged(toggle.isOn); // set initial visual state
     }
 
     // Moves the thumb and changes background color based on toggle state

@@ -2,9 +2,10 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 
+// Displays temporary notification messages on screen
 public class UINotification : MonoBehaviour
 {
-    public static UINotification instance;
+    public static UINotification instance; // singleton for global access
 
     public GameObject notificationPanel;
     public TMP_Text notificationText;
@@ -19,9 +20,10 @@ public class UINotification : MonoBehaviour
     void Start()
     {
         animator = notificationPanel.GetComponent<Animator>();
-        notificationPanel.SetActive(false); // Hide panel on startups
+        notificationPanel.SetActive(false); // hide panel on startup
     }
 
+    // Cancels any active notification and shows a new one
     public void ShowNotification(string message, Color color)
     {
         StopAllCoroutines();
@@ -35,9 +37,7 @@ public class UINotification : MonoBehaviour
         notificationText.color = color;
         notificationPanel.SetActive(true);
         animator.Play("NotificationSlideIn");
-
         yield return new WaitForSeconds(2f);
-
         notificationPanel.SetActive(false);
     }
 }

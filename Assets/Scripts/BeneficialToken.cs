@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+// Handles the beneficial token pickup - activates coin doubler when collected by the player
 public class BeneficialToken : MonoBehaviour
 {
     public AudioClip tokenSound;
@@ -8,6 +9,7 @@ public class BeneficialToken : MonoBehaviour
 
     void Start()
     {
+        // Add and configure AudioSource at runtime
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.playOnAwake = false;
     }
@@ -19,19 +21,17 @@ public class BeneficialToken : MonoBehaviour
         {
             ScoreManager.instance.StartCoinDoubler();
             GetComponentInChildren<ParticleSystem>().Play();
-            GetComponent<MeshRenderer>().enabled = false;
-            GetComponent<Collider>().enabled = false;
-
+            GetComponent<MeshRenderer>().enabled = false; // hide token visually
+            GetComponent<Collider>().enabled = false;     // prevent re-triggering
             if (tokenSound != null)
                 audioSource.PlayOneShot(tokenSound);
-
             StartCoroutine(Deactivate());
         }
     }
 
     IEnumerator Deactivate()
     {
-        yield return new WaitForSeconds(1.5f); // Wait for particle effect to finish
+        yield return new WaitForSeconds(1.5f); // wait for particle effect to finish
         gameObject.SetActive(false);
     }
 }

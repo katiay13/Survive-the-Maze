@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// Custom music toggle button that mutes/unmutes background music
 public class MusicToggle : MonoBehaviour
 {
     public Image background;
@@ -8,18 +9,19 @@ public class MusicToggle : MonoBehaviour
     public AudioSource musicSource;
 
     private bool isOn = true;
-
-    private Color onColor = new Color(0f, 0.94f, 1f, 1f);
-    private Color offColor = new Color(0f, 0.94f, 1f, 0.25f);
+    private Color onColor = new Color(0f, 0.94f, 1f, 1f);    // bright cyan when on
+    private Color offColor = new Color(0f, 0.94f, 1f, 0.25f); // faded cyan when off
 
     void Start()
     {
+        // Register click listener and set initial visual state
         GetComponent<Button>().onClick.AddListener(OnClick);
         UpdateVisual();
     }
 
     void OnClick()
     {
+        // Toggle state on each click
         isOn = !isOn;
         UpdateVisual();
     }

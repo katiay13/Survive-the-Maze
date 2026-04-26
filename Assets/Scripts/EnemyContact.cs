@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Triggers player death when the enemy makes contact
 public class EnemyContact : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
