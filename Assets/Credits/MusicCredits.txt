@@ -1,7 +1,23 @@
 CREDITS
 
 Background Music:
-Track name: [Darker Waves]
-Artist: [Zander Noriega]
-Source: [https://opengameart.org/content/darker-waves]
-License: [CC BY 3.0]
+Track name: Darker Waves
+Artist: Zander Noriega
+Source: https://opengameart.org/content/darker-waves
+License: CC BY 3.0
+ 
+Sound Effects:
+Track name: cute error 01
+Artist: mokasza
+Source: https://freesound.org/people/mokasza/sounds/810759/
+License: CC BY 4.0
+ 
+Track name: Bouncing Power Up 1_4
+Artist: Joao_Janz
+Source: https://freesound.org/people/Joao_Janz/sounds/478343/
+License: CC0 (Public Domain)
+ 
+Track name: Yoink2
+Artist: Fupicat
+Source: https://freesound.org/people/Fupicat/sounds/538156/
+License: CC0 (Public Domain)
