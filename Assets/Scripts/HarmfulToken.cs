@@ -1,16 +1,31 @@
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
 public class HarmfulToken : MonoBehaviour
 {
     public float spawnRadius = 5f;
+    public AudioClip tokenSound;
+    private AudioSource audioSource;
 
-    private void OnTriggerEnter(Collider other)
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
+    }
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             TeleportEnemyNearPlayer(other.transform);
-            Destroy(gameObject);
+            GetComponentInChildren<ParticleSystem>().Play();
+            GetComponent<MeshRenderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+            if (tokenSound != null)
+                audioSource.PlayOneShot(tokenSound);
+            UINotification.instance.ShowNotification("ENEMIES ENRAGED!", Color.red);
+            StartCoroutine(Deactivate());
         }
     }
 
@@ -25,5 +40,11 @@ public class HarmfulToken : MonoBehaviour
         {
             EnemyMovement.instance.GetComponent<NavMeshAgent>().Warp(hit.position);
         }
+    }
+
+    IEnumerator Deactivate()
+    {
+        yield return new WaitForSeconds(1.5f);
+        gameObject.SetActive(false);
     }
 }

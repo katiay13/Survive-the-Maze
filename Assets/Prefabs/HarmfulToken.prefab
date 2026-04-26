@@ -4966,5 +4966,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a68242da631f9f409f557cd5ceb6451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
   spawnRadius: 5
+  tokenSound: {fileID: 8300000, guid: fa6bfade87f637046bdcda31cdb38045, type: 3}
