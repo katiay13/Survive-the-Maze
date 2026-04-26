@@ -14,6 +14,7 @@ public class BeneficialToken : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        // Activate coin doubler and hide the token while the particle effect plays
         if (other.CompareTag("Player"))
         {
             ScoreManager.instance.StartCoinDoubler();
@@ -30,7 +31,7 @@ public class BeneficialToken : MonoBehaviour
 
     IEnumerator Deactivate()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.5f); // Wait for particle effect to finish
         gameObject.SetActive(false);
     }
 }

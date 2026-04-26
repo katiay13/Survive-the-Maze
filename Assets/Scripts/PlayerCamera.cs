@@ -20,6 +20,7 @@ public class PlayerCamera : MonoBehaviour
     {
         if (player == null) return;
 
+        // Only rotate the camera while right mouse button is held
         float mouseX = 0f;
         float mouseY = 0f;
 
@@ -37,6 +38,7 @@ public class PlayerCamera : MonoBehaviour
         currentX += mouseX * mouseSensitivity;
         currentY = Mathf.Clamp(currentY, minYAngle, maxYAngle);
 
+        // Moves and rotate the camera toward the desired position behind the player
         Quaternion rotation = Quaternion.Euler(currentY, currentX, 0);
         Vector3 desiredPosition = player.position + rotation * offset;
         transform.position = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed * Time.deltaTime);

@@ -21,6 +21,7 @@ public class Coin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Add coin to score and hide it while the particle effect plays
             ScoreManager.instance.AddCoin();
             GetComponentInChildren<ParticleSystem>().Play();
             GetComponent<MeshRenderer>().enabled = false;

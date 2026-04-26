@@ -8,6 +8,7 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     void Start() => img = GetComponent<Image>();
 
+    // Highlights the button background when the cursor hovers over it
     public void OnPointerEnter(PointerEventData e)
         => img.color = new Color(0f, 0.94f, 1f, 0.09f);
 
